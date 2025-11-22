@@ -9,10 +9,10 @@ A comprehensive Python-based tool for analyzing network traffic to detect and co
 
 **IMPORTANT**: This tool is designed for legitimate security research, network forensics, and authorized penetration testing only. Users must:
 
-- Obtain proper authorization before analyzing any network traffic
+- Obtain proper authorization before analyzing any network traffic.
 - Comply with all applicable laws and regulations (GDPR, CFAA, etc.)
-- Anonymize data when sharing or publishing results
-- Respect privacy and ethical guidelines
+- Anonymize data when sharing or publishing results.
+- Respect privacy and ethical guidelines.
 
 **Unauthorized network monitoring may be illegal in your jurisdiction.**
 
@@ -21,10 +21,10 @@ A comprehensive Python-based tool for analyzing network traffic to detect and co
 ### Core Capabilities
 - **PCAP Ingestion**: Stream large PCAP files efficiently using Scapy
 - **TOR Detection**: Identify TOR traffic using multiple heuristics:
-  - Known TOR relay IP/port matching
-  - TLS handshake pattern detection
-  - Obfsproxy/pluggable transport identification
-  - Directory fetch detection
+  - Known TOR relay IP/port matching.
+  - TLS handshake pattern detection.
+  - Obfsproxy/pluggable transport identification.
+  - Directory fetch detection.
 - **Flow Correlation**: Advanced timing and pattern analysis to identify entry/exit node pairs
 - **Confidence Scoring**: Multi-factor scoring system (0-100) with categories:
   - Low (0-30)
@@ -366,14 +366,14 @@ streamlit cache clear
 
 ## 🔮 Future Enhancements
 
-- [ ] Real-time packet capture integration
-- [ ] Machine learning-based classification
-- [ ] GeoIP visualization
-- [ ] YARA rule integration
-- [ ] Elasticsearch backend support
-- [ ] REST API for integration
-- [ ] Docker containerization
-- [ ] Multi-threaded processing
+- [ ] Real-time packet capture integration.
+- [ ] Machine learning-based classification.
+- [ ] GeoIP visualization.
+- [ ] YARA rule integration.
+- [ ] Elasticsearch backend support.
+- [ ] REST API for integration.
+- [ ] Docker containerization.
+- [ ] Multi-threaded processing.
 
 ## 📚 References
 
