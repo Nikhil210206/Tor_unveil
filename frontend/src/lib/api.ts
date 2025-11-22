@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://tor-unveil-dil6.onrender.com';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://tor-unveil-dil6.onrender.com';
 
 export interface Stats {
   total_flows: number;
