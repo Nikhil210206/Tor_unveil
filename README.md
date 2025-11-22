@@ -409,4 +409,4 @@ For questions, issues, or collaboration:
 
 ---
 
-**Remember**: Use this tool responsibly and ethically. Always obtain proper authorization before analyzing network traffic.
+**Remember**: Use this tool responsibly and ethically. Always obtain proper authorization before analyzing the network traffic.
