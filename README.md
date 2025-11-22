@@ -1,6 +1,5 @@
 # 🔍 TOR Network Analysis Tool
 
-<<<<<<< HEAD
 Full-stack application for analyzing network traffic and detecting TOR (The Onion Router) usage patterns.
 =======
 A comprehensive Python-based tool for analyzing network traffic to detect and correlate TOR (The Onion Router) usage patterns. This tool ingests PCAP files, identifies TOR-related indicators, correlates flows to detect potential TOR circuits, computes confidence scores, and provides an interactive Streamlit dashboard with network visualizations and automated PDF forensic reports.
@@ -248,28 +247,7 @@ This tool is designed for legitimate security research, network forensics, and a
 
 **Unauthorized network monitoring may be illegal in your jurisdiction.**
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-## 📄 License
-
-MIT License - see LICENSE file for details
-
-## 🙏 Acknowledgments
-
-- TOR Project for relay data
-- Scapy team for packet processing
-- FastAPI and React communities
-
----
-
-<<<<<<< HEAD
-**Built for security research and network forensics** 🔍
-=======
-**Remember**: Use this tool responsibly and ethically. Always obtain proper authorization before analyzing the network traffic.
->>>>>>> a34f650c0b120d2793d0bb40f9bbd218e8cc1a89
+Contributors
+Kumar Hrishav
+Ankita Majhi
+Nikhil Balamurugan
