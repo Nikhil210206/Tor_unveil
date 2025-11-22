@@ -1,3 +1,65 @@
+#!/bin/bash
+
+# TOR Network Analysis - Monorepo Setup Script
+# This script reorganizes the project into backend/ and frontend/ structure
+
+set -e
+
+echo "🔧 Setting up monorepo structure..."
+
+# Stop any running servers first
+echo "⚠️  Please stop your running servers (Ctrl+C) before continuing."
+read -p "Press Enter when ready to continue..."
+
+cd /Users/nikhil/Documents/Tor_unveil
+
+# Create backend directory
+echo "📁 Creating backend directory..."
+mkdir -p backend
+
+# Move backend files
+echo "📦 Moving backend files..."
+mv src backend/ 2>/dev/null || true
+mv tests backend/ 2>/dev/null || true
+mv scripts backend/ 2>/dev/null || true
+mv data backend/ 2>/dev/null || true
+mv requirements.txt backend/ 2>/dev/null || true
+mv requirements-api.txt backend/ 2>/dev/null || true
+mv Makefile backend/ 2>/dev/null || true
+mv tor_analysis.db backend/ 2>/dev/null || true
+
+# Move documentation to backend
+echo "📄 Moving backend docs..."
+mv API_README.md backend/ 2>/dev/null || true
+mv BACKEND_READY.md backend/ 2>/dev/null || true
+
+# Keep these in root
+echo "📋 Keeping root files..."
+# .git, .gitignore, README.md stay in root
+
+# Create placeholder for frontend
+echo "📱 Creating frontend placeholder..."
+mkdir -p frontend
+cat > frontend/README.md << 'EOF'
+# Frontend
+
+The React frontend will go here.
+
+## Setup
+
+After adding the Lovable AI generated code:
+
+```bash
+npm install
+npm run dev
+```
+
+The app will run on http://localhost:5173
+EOF
+
+# Create new root README
+echo "📝 Creating main README..."
+cat > README.md << 'EOF'
 # 🔍 TOR Network Analysis Tool
 
 Full-stack application for analyzing network traffic and detecting TOR (The Onion Router) usage patterns.
@@ -163,3 +225,117 @@ MIT License - see LICENSE file for details
 ---
 
 **Built for security research and network forensics** 🔍
+EOF
+
+# Update .gitignore
+echo "🔒 Updating .gitignore..."
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+env/
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Reports
+reports/*.pdf
+
+# PCAP files
+*.pcap
+*.pcapng
+data/sample*.pcap
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/.cache/
+frontend/.env.local
+frontend/.env.production.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Misc
+.env
+*.bak
+EOF
+
+# Create deployment configs
+echo "🚢 Creating deployment configs..."
+
+# Railway config for backend
+cat > railway.toml << 'EOF'
+[build]
+builder = "NIXPACKS"
+buildCommand = "cd backend && pip install -r requirements.txt -r requirements-api.txt"
+
+[deploy]
+startCommand = "cd backend && uvicorn src.api.main:app --host 0.0.0.0 --port $PORT"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+EOF
+
+# Vercel config for frontend
+mkdir -p frontend
+cat > vercel.json << 'EOF'
+{
+  "buildCommand": "cd frontend && npm run build",
+  "outputDirectory": "frontend/dist",
+  "devCommand": "cd frontend && npm run dev",
+  "installCommand": "cd frontend && npm install"
+}
+EOF
+
+echo ""
+echo "✅ Monorepo setup complete!"
+echo ""
+echo "📁 New structure:"
+echo "   Tor_unveil/"
+echo "   ├── backend/      (all Python code)"
+echo "   ├── frontend/     (add Lovable AI code here)"
+echo "   └── README.md     (main documentation)"
+echo ""
+echo "🎯 Next steps:"
+echo "   1. Add your Lovable AI frontend code to frontend/"
+echo "   2. Update API URL in frontend to http://localhost:8000"
+echo "   3. Test: cd backend && uvicorn src.api.main:app --reload"
+echo "   4. Test: cd frontend && npm run dev"
+echo ""
+echo "🚀 Ready to rock!"
