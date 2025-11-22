@@ -1,0 +1,152 @@
+[
+    {
+        "ip_address": "185.220.101.1",
+        "port": 9001,
+        "fingerprint": "A1B2C3D4E5F6789012345678901234567890ABCD",
+        "nickname": "TorRelay001",
+        "flags": [
+            "Fast",
+            "Guard",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "DE",
+        "asn": "AS12345",
+        "bandwidth": 10485760
+    },
+    {
+        "ip_address": "185.220.101.2",
+        "port": 9001,
+        "fingerprint": "B2C3D4E5F67890123456789012345678901ABCDE",
+        "nickname": "TorRelay002",
+        "flags": [
+            "Exit",
+            "Fast",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "NL",
+        "asn": "AS23456",
+        "bandwidth": 20971520
+    },
+    {
+        "ip_address": "185.220.101.3",
+        "port": 9001,
+        "fingerprint": "C3D4E5F678901234567890123456789012ABCDEF",
+        "nickname": "TorRelay003",
+        "flags": [
+            "Fast",
+            "Guard",
+            "HSDir",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "SE",
+        "asn": "AS34567",
+        "bandwidth": 15728640
+    },
+    {
+        "ip_address": "185.220.101.4",
+        "port": 443,
+        "fingerprint": "D4E5F6789012345678901234567890123ABCDEF0",
+        "nickname": "TorRelay004",
+        "flags": [
+            "Fast",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "CH",
+        "asn": "AS45678",
+        "bandwidth": 8388608
+    },
+    {
+        "ip_address": "185.220.101.5",
+        "port": 9001,
+        "fingerprint": "E5F67890123456789012345678901234ABCDEF01",
+        "nickname": "TorRelay005",
+        "flags": [
+            "Exit",
+            "Fast",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "FR",
+        "asn": "AS56789",
+        "bandwidth": 31457280
+    },
+    {
+        "ip_address": "185.220.102.1",
+        "port": 9001,
+        "fingerprint": "F678901234567890123456789012345ABCDEF012",
+        "nickname": "GuardNode01",
+        "flags": [
+            "Guard",
+            "Fast",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "US",
+        "asn": "AS67890",
+        "bandwidth": 52428800
+    },
+    {
+        "ip_address": "185.220.102.2",
+        "port": 9001,
+        "fingerprint": "67890123456789012345678901234ABCDEF0123",
+        "nickname": "ExitNode01",
+        "flags": [
+            "Exit",
+            "Fast",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "RO",
+        "asn": "AS78901",
+        "bandwidth": 41943040
+    },
+    {
+        "ip_address": "185.220.102.3",
+        "port": 9030,
+        "fingerprint": "7890123456789012345678901234ABCDEF01234",
+        "nickname": "DirAuthority",
+        "flags": [
+            "Authority",
+            "Fast",
+            "HSDir",
+            "Stable",
+            "Valid",
+            "V2Dir"
+        ],
+        "country_code": "DE",
+        "asn": "AS89012",
+        "bandwidth": 104857600
+    },
+    {
+        "ip_address": "185.220.103.1",
+        "port": 9001,
+        "fingerprint": "890123456789012345678901234ABCDEF012345",
+        "nickname": "MiddleRelay01",
+        "flags": [
+            "Fast",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "NO",
+        "asn": "AS90123",
+        "bandwidth": 26214400
+    },
+    {
+        "ip_address": "185.220.103.2",
+        "port": 443,
+        "fingerprint": "90123456789012345678901234ABCDEF0123456",
+        "nickname": "ObfsRelay01",
+        "flags": [
+            "Fast",
+            "Stable",
+            "Valid"
+        ],
+        "country_code": "IS",
+        "asn": "AS01234",
+        "bandwidth": 18874368
+    }
+]
