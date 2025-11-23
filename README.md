@@ -1,4 +1,4 @@
-# 🔍 TOR Network Analysis Tool
+# 🔍 SecureX - TOR Network Analysis Tool
 
 Full-stack application for analyzing network traffic and detecting TOR (The Onion Router) usage patterns.
 =======
