@@ -219,8 +219,6 @@ Or use the Vercel GitHub integration for automatic deployments.
 See full API documentation at `http://localhost:8000/docs`
 
 ## ⚠️ Legal Notice
-
-<<<<<<< HEAD
 This tool is designed for legitimate security research, network forensics, and authorized penetration testing only. Users must:
 =======
 - [ ] Real-time packet capture integration.
@@ -231,7 +229,6 @@ This tool is designed for legitimate security research, network forensics, and a
 - [ ] REST API for integration.
 - [ ] Docker containerization.
 - [ ] Multi-threaded processing.
->>>>>>> a34f650c0b120d2793d0bb40f9bbd218e8cc1a89
 
 - Obtain proper authorization before analyzing any network traffic
 - Comply with all applicable laws and regulations
