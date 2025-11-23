@@ -149,12 +149,6 @@ npm run dev
 
 Frontend will be available at: `http://localhost:5173`
 
-## 📚 Documentation
-
-- **Backend API**: See [backend/API_README.md](backend/API_README.md)
-- **Frontend Setup**: See [frontend/README.md](frontend/README.md)
-- **Lovable AI Prompt**: See [LOVABLE_AI_PROMPT.md](LOVABLE_AI_PROMPT.md)
-
 ## 🎯 Features
 
 ### Backend (Python/FastAPI)
