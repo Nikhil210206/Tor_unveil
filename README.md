@@ -4,10 +4,7 @@ Full-stack application for analyzing network traffic and detecting TOR (The Onio
 =======
 A comprehensive Python-based tool for analyzing network traffic to detect and correlate TOR (The Onion Router) usage patterns. This tool ingests PCAP files, identifies TOR-related indicators, correlates flows to detect potential TOR circuits, computes confidence scores, and provides an interactive Streamlit dashboard with network visualizations and automated PDF forensic reports.
 
-Deployed link: 
-
-![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+Deployed link: https://tor-unveil-frontend.vercel.app
 
 ## ⚠️ Legal & Ethical Notice
 
