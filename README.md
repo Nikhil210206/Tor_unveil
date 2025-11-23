@@ -94,7 +94,6 @@ streamlit run src/web/app.py
 ```
 
 The dashboard will open at `http://localhost:8501`
->>>>>>> a34f650c0b120d2793d0bb40f9bbd218e8cc1a89
 
 ## 📁 Project Structure
 
